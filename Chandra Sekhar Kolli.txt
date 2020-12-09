@@ -1,0 +1,154 @@
+Solution 1) To create a simple XML document to display the address book.
+
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+<addressbook>
+<employee1>
+	<ename>KCS</ename>
+	<street>Krishna Lanka/street>
+	<area>Feeder Road</area>
+	<city>Bezavada</city>
+	<state>Andhra Pradesh</state>
+	<country>India</country>
+	<phoneno>9989111222</phoneno>
+</employee1>
+<employee2>
+	<ename>Madhu</ename>
+	<street>Gandhiji Street </street>
+	<area>Assembly Road</area>
+	<city>Hyd</city>
+	<state>Telangana</state>
+	<country>India</country>
+	<phoneno>9989333444</phoneno>
+</employee2>
+</addressbook>
+==============================================================
+Solution 2) To create a xml document and database for importing and exporting xml document into database
+
+<? xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<record>
+	<Name>KCS</Name>
+	<Age>37</Age>
+	<Major>CS</Major>
+	<GPA>7.9</GPA>
+</record>
+
+<record>
+	<Name>Madhu</Name>
+	<Age>31</Age>
+	<Major>Chemistry</Major>
+	<GPA>6.5</GPA>
+</record>
+</student-data>
+================================================================================
+
+Solution 3) To create a simple XSLT transformation from XSL to XML
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html> 
+<body>
+  <h2>My CD Collections</h2>
+  <table border="1">
+    <tr bgcolor="cyan">
+      <th style="text-align:left">Title</th>
+      <th style="text-align:left">Artist</th>
+    </tr>
+    <xsl:for-each select="catalog/cd">
+    <tr>
+      <td><xsl:value-of select="title"/></td>
+      <td><xsl:value-of select="artist"/></td>
+    </tr>
+    </xsl:for-each>
+  </table>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+-----------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cdcatalog.xsl" ?>
+<catalog>
+  <cd>
+    <title>Titanic</title>
+    <artist>Anil</artist>
+    <country>Australia</country>
+    <company>Manhattan</company>
+    <price>10$</price>
+    <year>2000</year>
+  </cd>
+</catalog>
+===============================================================================
+Solution 4)  Create a XSD and DTD for Student information as given below xml document.
+
+===============================================================================
+Solution 5) 5.Create XML document which store the information about Library/Bookstore. more than 5 books.
+
+<bookstore> 
+	<book category="Comic">
+    	  <title>A</title>
+      	<author>Arun</author>
+     	 <year>2000</year>
+      	<price>20000</price>
+   	</book>
+
+	<book category="Fiction">
+    	  <title>B</title>
+      	<author>Balu</author>
+     	 <year>3000</year>
+      	<price>30000</price>
+   	</book>
+
+	<book category="Action">
+    	  <title>C</title>
+      	<author>Chan</author>
+     	 <year>4000</year>
+      	<price>40000</price>
+   	</book>
+
+	<book category="Love">
+    	  <title>D</title>
+      	<author>Dodje</author>
+     	 <year>5000</year>
+      	<price>50000</price>
+   	</book>
+	
+	<book category="Romantic">
+    	  <title>E</title>
+      	<author>Ericson</author>
+     	 <year>6000</year>
+      	<price>60000</price>
+   	</book>
+</bookstore>
+===============================================================
+Solution 6) Create XML document which store the information about employee.
+
+	<employees>
+		<emp1>
+			<eno> 1000</eno>
+			<ename>Anil</ename>
+		</emp1>
+		<emp2>
+			<eno>2000	</eno>
+			<ename>Balu</ename>
+		</emp2>
+		<emp3>
+			<eno> 3000</eno>
+			<ename>Cherry	</ename>
+		</emp3>
+		<emp4>
+			<eno> 4000	</eno>
+			<ename>Dodge	</ename>
+		</emp4>
+		<emp5>
+			<eno> 5000	</eno>
+			<ename> Eswar	</ename>
+		</emp5>
+
+	</employees>
+
+
+
+
+
