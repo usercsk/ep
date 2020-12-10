@@ -14,5 +14,6 @@ public class TestDemo{
     public void testMethod2()
     {  
         assertEquals(1, PrimeTest.test(4));
+        //demo
     } 
 }
